@@ -2,7 +2,7 @@
 自動進入Google Meet會議室
 
 ## 使用說明
-在此頁按右上角下載zip檔並解壓縮
+在此頁按右上角code，點Download zip下載zip檔並解壓縮
 
 用記事本打開js/foreground.js，找到class_code填入選修課代碼，存檔並關閉
 
