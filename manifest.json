@@ -1,0 +1,23 @@
+{
+    "name": "上課啦",
+    "description": "自動上課",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "storage",
+      "activeTab",
+      "activeTab"
+    ],
+    "action": {
+        "default_title": "extension"
+      },
+      "content_scripts" : [{  
+            "matches" : ["*://meet.google.com/?*" , "*://meet.google.com/landing?*"],
+            "js" : ["js/foreground_1.js"]  
+      },
+      {
+      "matches" :["*://meet.google.com/*-*-*?*"],
+      "js" : ["js/foreground_2.js"]
+      }
+      ]
+  }
