@@ -1,7 +1,7 @@
 console.log(`>>> foreground_1 online`);
 
 function enter_class_code(num){
-    var input = document.querySelector("#i4") // 反覆focus、unfocus讓button出現
+    var input = document.querySelector("#i6") // 反覆focus、unfocus讓button出現
     input.value = ''
     input.focus()
     input.blur() // 反覆focus、unfocus讓button出現
