@@ -1,23 +1,30 @@
 console.log(`>>> foreground_1 online`);
 
 function enter_class_code(num){
+    var btn = document.querySelector("#yDmH0d > c-wiz > div > div.S3RDod > div > div.Qcuypc > div.Ez8Iud > div > div.KOM0mb > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button")
     var input = document.querySelector("#i6") // 反覆focus、unfocus讓button出現
+
     input.value = ''
-    input.focus()
-    input.blur() // 反覆focus、unfocus讓button出現
+
     setTimeout(function(){ // 等待loading
-        input.focus()
-        input.blur() // 反覆focus、unfocus讓button出現
+
         input.value = String(num) // 輸入參數
-        input.focus() // 反覆focus、unfocus讓button出現
+
+        btn.setAttribute('aria-hidden', 'false');
+        btn.style.display = 'inline-flex';
+        btn.disabled = false
+
         setTimeout(function(){ // 等待loading
+
             document.querySelector("#yDmH0d > c-wiz > div > div.S3RDod > div > div.Qcuypc > div.Ez8Iud > div > div > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button > span").click() // 按下加入
+        
         }, 1000)
-    }, 1000)
+        
+    }, 500)
 }
 
 var code = [
-    ["045" , "079" , "" , "" , "" , "045" , "003" , "129"],
+    ["045" , "079" , "063" , "063" , "" , "045" , "003" , "129"],
     ["146" , "079" , "088" , "045" , "182" , "182" , "003" , "003"],
     ["045" , "198" , "003" , "079" , "003" , "003" , "129" , "146"],
     ["129" , "146" , "045" , "146" , "003" , "003" , "088" , "079"],

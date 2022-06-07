@@ -1,0 +1,21 @@
+{
+    "name": "上課啦 beta",
+    "description": "Google Meet 自動上線 beta 版",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "storage"
+    ],
+    "action": {
+      "default_title": "extension"
+      },
+      "content_scripts" : [{  
+            "matches" : ["*://meet.google.com/?*" , "*://meet.google.com/landing?*"],
+            "js" : ["js/foreground_1.js"]  
+      },
+      {
+      "matches" :["*://meet.google.com/*-*-*?*"],
+      "js" : ["js/foreground_2.js"]
+      }
+      ]
+  }
